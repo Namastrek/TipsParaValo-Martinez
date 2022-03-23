@@ -78,6 +78,8 @@ footer div p {
   color: #d9d9d9;
 }
 
+/* Los main */
+
 .main-index {
   width: 90%;
   border-top: #e84350 solid 3px;
@@ -98,6 +100,7 @@ footer div p {
   margin-left: 100px;
   display: grid;
   grid-template-columns: 1fr;
+  text-align: center;
 }
 
 .main-agentes {
@@ -110,15 +113,33 @@ footer div p {
   grid-template-columns: 1fr;
 }
 
+.main-formulario {
+  width: 100%;
+  background-color: #222222;
+  padding-top: 105px;
+  padding-bottom: 45px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+
+/* header */
+
 .cabeza {
   width: 100%;
-  height: 100%;
+  height: auto;
+  padding-top: 100px;
   position: absolute;
   z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* menu */
 
 .menu {
   padding: 0;
@@ -157,6 +178,8 @@ footer div p {
   font-weight: bold;
 }
 
+/* index */
+
 .sec1 {
   width: 100%;
   height: 600px;
@@ -172,15 +195,16 @@ footer div p {
 }
 
 .sec1 p {
+  height: auto;
   padding-top: 0;
   padding-bottom: 0;
-  text-align: left;
+  text-align: justify;
   display: flex;
 }
 
 .sec2 {
   width: 100%;
-  height: 600px;
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,7 +213,7 @@ footer div p {
 .sec3 {
   border-top: #e84350 solid 3px;
   width: 100%;
-  height: 600px;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -204,18 +228,20 @@ footer div p {
 .sec3 p {
   padding-top: 0;
   padding-bottom: 0;
-  text-align: left;
+  text-align: justify;
   display: flex;
 }
 
 .sec4 {
   border-top: #e84350 solid 3px;
   width: 100%;
-  height: 600px;
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* competitivo */
 
 .sec-titulo {
   height: 100px;
@@ -228,7 +254,7 @@ footer div p {
 
 .sec-1 {
   width: 100%;
-  height: 400px;
+  height: 460px;
   display: grid;
   grid-template-columns: 1fr;
   border-top: #e84350 3px solid;
@@ -250,7 +276,7 @@ footer div p {
 
 .sec-2 {
   width: 100%;
-  height: 400px;
+  height: 460px;
   display: grid;
   grid-template-columns: 1fr;
   border-top: #e84350 3px solid;
@@ -286,7 +312,7 @@ footer div p {
 
 .sec-4 {
   width: 100%;
-  height: 400px;
+  height: 460px;
   display: grid;
   grid-template-columns: 1fr;
   border-top: #e84350 3px solid;
@@ -305,6 +331,8 @@ footer div p {
   text-align: center;
   display: flex;
 }
+
+/* agentes */
 
 .titulo-agentes {
   padding-top: 2rem;
@@ -725,6 +753,8 @@ footer div p {
   align-items: left;
 }
 
+/* footer */
+
 .copy {
   padding: 1rem;
   text-align: center;
@@ -746,18 +776,7 @@ footer div p {
   font-family: "Roboto Mono", monospace;
 }
 
-.main-formulario {
-  width: 100%;
-  background-color: #222222;
-  padding-top: 105px;
-  padding-bottom: 45px;
-  text-align: center;
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 20px;
-}
+/* formulario */
 
 .contenido {
   width: 95%;
@@ -856,7 +875,32 @@ footer div p {
   outline: 0;
 }
 
-@media (min-width: 700px) {
+/* Medias */
+
+/* INDEX */
+
+@media (max-width: 800px) {
+  .main-index {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sec1 {
+    height: 500px;
+  }
+
+  .sec3 {
+    height: 500px;
+  }
+
+  .sec4 {
+    border-top: none;
+  }
+}
+
+/* formulario */
+
+@media (min-width: 800px) {
   .menu {
     justify-content: flex-end;
   }
@@ -880,3 +924,500 @@ footer div p {
     grid-column: 1 / 3;
   }
 }
+
+/* competitivo */
+
+@media (max-width: 800px) {
+  .main-competitivo {
+    width: 90%;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .sec-titulo {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    font-size: 12px;
+  }
+
+  .sec-1 {
+    height: 700px;
+  }
+
+  .sec-1 h2 {
+    font-size: 25px;
+  }
+
+  .sec-1 p {
+    text-align: justify;
+  }
+
+  .sec-2 {
+    height: 700px;
+  }
+
+  .sec-2 h2 {
+    font-size: 25px;
+  }
+
+  .sec-2 p {
+    text-align: justify;
+  }
+
+  .sec-3 img {
+    width: 100%;
+  }
+
+  .sec-4 {
+    height: 500px;
+  }
+
+  .sec-4 h2 {
+    font-size: 25px;
+  }
+
+  .sec-4 p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 500px) {
+  .sec-1 {
+    height: 900px;
+  }
+  .sec-2 {
+    height: 900px;
+  }
+  .sec-4 {
+    height: 700px;
+  }
+}
+
+/* agentes */
+
+@media (max-width: 800px) {
+  .main-agentes {
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+    
+  }
+
+  .titulo-agentes {
+    width: 90%;
+    height: 300px;
+  }
+
+  .titulo-agentes p {
+    text-align: justify;
+  }
+
+  .sage {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sage img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .sage div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .sage div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .sova {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .sova img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .sova div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .sova div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .viper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .viper img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .viper div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .viper div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .cypher {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cypher img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .cypher div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .cypher div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .reyna {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .reyna img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .reyna div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .reyna div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .killjoy {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .killjoy img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .killjoy div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .killjoy div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .skye {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .skye img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .skye div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .skye div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .yoru {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .yoru img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .yoru div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .yoru div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .astra {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .astra img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .astra div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .astra div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .kayo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .kayo img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .kayo div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .kayo div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .chamber {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .chamber img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .chamber div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .chamber div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .neon {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .neon img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .neon div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .neon div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .jett {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .jett img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .jett div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .jett div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .raze {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .raze img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .raze div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .raze div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .breach {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .breach img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .breach div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .breach div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .omen {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .omen img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .omen div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .omen div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .brimstone {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .brimstone img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .brimstone div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .brimstone div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+
+  .phoenix {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .phoenix img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .phoenix div {
+    height: 300px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .phoenix div p {
+    height: auto;
+    width: 90%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-agentes {
+    width: 100%;
+    align-items: center;
+  }
+
+  .titulo-agentes {
+    height: 350px;
+  }
+} 
+
+/* Animaciones
