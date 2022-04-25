@@ -27,11 +27,22 @@ p {
   color: #383e3a;
 }
 
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
 header nav {
   position: fixed;
   height: auto;
   width: 100%;
   z-index: 10;
+}
+
+header video {
+  width: 100%;
 }
 
 footer {
@@ -177,11 +188,15 @@ footer div p {
 
 .cabeza {
   width: 100%;
-  padding-top: 80px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position:absolute;
+  z-index: 5;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cabeza h1 {
@@ -1028,9 +1043,9 @@ footer div p {
   .main-index {
     width: 100%;
     border-top: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
   .sec1 {
     border-top: #e84350 solid 3px;
@@ -1580,57 +1595,72 @@ footer div p {
 /* mapas */
 
 @media (max-width: 800px) {
+  .main-mapas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
   .titulo-mapas {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
   .ascent {
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .ascent-img img {
+    width: 100%;
   }
   .bind {
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .bind-img img {
+    width: 100%;
   }
   .fracture {
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .fracture-img img {
+    width: 100%;
   }
   .icebox {
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .icebox-img img {
+    width: 100%;
   }
   .split {
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .split-img img {
+    width: 100%;
   }
   .haven {
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .haven-img img {
+    width: 100%;
   }
   .breeze {
     height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
+  .breeze-img img {
+    width: 100%;
   }
 }
-
-/* animaciones */
-
-/* formulario */
 
