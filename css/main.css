@@ -1599,6 +1599,7 @@ footer div p {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0;
   }
   .titulo-mapas {
     padding-left: 1.4rem;
@@ -1664,3 +1665,53 @@ footer div p {
   }
 }
 
+@media (max-width: 500px) {
+  .titulo-mapas {
+    padding: 3rem 5px;
+  }
+  .titulo-mapas-caja {
+    padding: 1rem 5px;
+  }
+  .ascent {
+    padding: 3rem 5px;
+  }
+  .ascent-text {
+    padding: 1rem 5px;
+  }
+  .fracture {
+    padding: 3rem 5px;
+  }
+  .fracture-text {
+    padding: 1rem 5px;
+  }
+  .bind {
+    padding: 3rem 5px;
+  }
+  .bind-text {
+    padding: 1rem 5px;
+  }
+  .icebox {
+    padding: 3rem 5px;
+  }
+  .icebox-text {
+    padding: 1rem 5px;
+  }
+  .split {
+    padding: 3rem 5px;
+  }
+  .split-text {
+    padding: 1rem 5px;
+  }
+  .haven {
+    padding: 3rem 5px;
+  }
+  .haven-text {
+    padding: 1rem 5px;
+  }
+  .breeze {
+    padding: 3rem 5px;
+  }
+  .breeze-text {
+    padding: 1rem 5px;
+  }
+}
