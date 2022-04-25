@@ -1,0 +1,21 @@
+.titulo-mapas-caja {
+  background-color: rgba(34, 34, 34, 0.6); }
+
+.ascent, .bind, .fracture, .icebox, .split, .haven, .breeze {
+  background-color: #111111;
+  border-top: #e84350 solid 3px; }
+  .ascent .ascent-text, .bind .ascent-text, .fracture .ascent-text, .icebox .ascent-text, .split .ascent-text, .haven .ascent-text, .breeze .ascent-text, .bind .bind-text, .fracture .fracture-text, .icebox .icebox-text, .split .split-text, .haven .haven-text, .breeze .breeze-text {
+    background-color: rgba(34, 34, 34, 0.6);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px; }
+    .ascent .ascent-text h2, .bind .ascent-text h2, .fracture .ascent-text h2, .icebox .ascent-text h2, .split .ascent-text h2, .haven .ascent-text h2, .breeze .ascent-text h2, .bind .bind-text h2, .fracture .fracture-text h2, .icebox .icebox-text h2, .split .split-text h2, .haven .haven-text h2, .breeze .breeze-text h2 {
+      color: #e84350;
+      font-size: 35px; }
+    .ascent .ascent-text p, .bind .ascent-text p, .fracture .ascent-text p, .icebox .ascent-text p, .split .ascent-text p, .haven .ascent-text p, .breeze .ascent-text p, .bind .bind-text p, .fracture .fracture-text p, .icebox .icebox-text p, .split .split-text p, .haven .haven-text p, .breeze .breeze-text p {
+      text-align: justify;
+      color: #d9d9d9; }
+  .ascent .ascent-img, .bind .ascent-img, .fracture .ascent-img, .icebox .ascent-img, .split .ascent-img, .haven .ascent-img, .breeze .ascent-img, .bind .bind-img, .fracture .fracture-img, .icebox .icebox-img, .split .split-img, .haven .haven-img, .breeze .breeze-img {
+    padding: 1rem;
+    background-color: rgba(34, 34, 34, 0.6);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; }

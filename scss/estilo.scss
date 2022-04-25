@@ -1,0 +1,80 @@
+.titulo-mapas-caja {
+    background-color: rgba($color: #222222, $alpha: 0.6);
+}
+.ascent {
+    background-color:#111111;
+    border-top: #e84350 solid 3px;
+    .ascent-text {
+        background-color: rgba($color: #222222, $alpha: 0.6);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        h2 {
+            color: #e84350;
+            font-size: 35px;
+        }
+        p {
+            text-align: justify;
+            color: #d9d9d9;
+        }
+    }
+    .ascent-img {
+        padding: 1rem;
+        background-color: rgba($color: #222222, $alpha: 0.6);
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }    
+}   
+.bind {
+    @extend .ascent;
+    .bind-text {
+        @extend .ascent-text;
+    }
+    .bind-img {
+        @extend .ascent-img;
+    }
+}
+.fracture {
+    @extend .ascent;
+    .fracture-text {
+        @extend .ascent-text;
+    }
+    .fracture-img {
+        @extend .ascent-img;
+    }
+}
+.icebox {
+    @extend .ascent;
+    .icebox-text {
+        @extend .ascent-text;
+    }
+    .icebox-img {
+        @extend .ascent-img;
+    }
+}
+.split {
+    @extend .ascent;
+    .split-text {
+        @extend .ascent-text;
+    }
+    .split-img {
+        @extend .ascent-img;
+    }
+}
+.haven {
+    @extend .ascent;
+    .haven-text {
+        @extend .ascent-text;
+    }
+    .haven-img {
+        @extend .ascent-img;
+    }
+}
+.breeze {
+    @extend .ascent;
+    .breeze-text {
+        @extend .ascent-text;
+    }
+    .breeze-img {
+        @extend .ascent-img;
+    }
+}

@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Mejor pagina para saber del competitivo de valorant">
+    <meta name="keywords"  content="tips, valorant, consejos, agentes, rangos, riotgames, riot, competitivo">
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+    <!-- ANIMATIONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- FAV ICON -->
     <link rel="shortcut icon" href="/media/favicon-32x32.png">
-    <link rel="stylesheet" href="estilo.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
     <title>Competitivo</title>
 </head>
 <body>
     <header id="titulo">
-        <nav>
+        <nav class="animate__animated animate__fadeInDown">
             <ul class="menu">
                 <li><a href="./index.html">INICIO</a></li>
                 <li><a href="./competitivo.html">COMPETITIVO</a></li>
                 <li><a href="./agentes.html">AGENTES</a></li>
+                <li><a href="./mapas.html">MAPAS</a></li>
                 <li><a href="./contacto.html"><span class="material-icons">help_outline</span></a></li>
             </ul>
         </nav>
     </header>
     <main class="main-competitivo">
-        <div class="sec-titulo">
+        <div class="sec-titulo animate__animated animate__backInUp">
             <h1>LOS RANGOS Y EL MODO COMPETITIVO DE VALORANT</h1>
         </div>
-        <section class="sec-1">
+        <section class="wow sec-1 animate__animated animate__backInUp">
             <h2>COMPETITIVO</h2>
             <p>
                 El modo competitivo de VALORANT es una de las modalidades más populares del juego. Los jugadores disfrutan el poner al límite sus habilidades contra oponentes del mismo nivel para obtener un mayor rango.<br>
@@ -44,7 +53,7 @@
                 En tanto, a partir de las 5 partidas en modo Competitivo, Valorant te ubicará en algún rango determinado.
             </p>
         </section>
-        <section class="sec-2">
+        <section class="wow sec-2 animate__animated animate__backInUp">
             <h2>¿QUÉ ES UN RANGO EN VALORANT?</h2>
             <p>
                 Un es una forma de medir tu destreza y hacerte competir con jugadores de tu mismo nivel. A medida que mejores tu nivel de juego, irás subiendo de rango.
@@ -58,10 +67,10 @@
                 Puedes evitar algunos escalones e incluso divisiones si consigues el matchmaking rating suficiente. El rendimiento individual y los frags se tienen muy en cuenta. Si tienes una larga racha de victorias y consigues premios a MVP constantemente, tus posibilidades de saltarte algunos rangos serán mucho más altas.
             </p>
         </section>
-        <section class="sec-3">
+        <section class="wow sec-3 animate__animated animate__backInUp">
             <img src="./media/rangos.jpg" alt="Rangos de Valorant">
         </section>
-        <section class="sec-4">
+        <section class="wow sec-4 animate__animated animate__backInUp">
             <h2>EL MUNDO DEL COMPETITIVO PROFESIONAL</h2>
             <p>
                 Para aquellos que sobresalen en Radiante pueden convertirse en profesionales y son suerte pueden competir en la VALORANT Champions Tour, que es una serie de torneos de eSports globales. Estos se llevan a cabo a lo largo de todo el año y cuentan con distintas etapas. En Latinoamérica, Riot Games es el encargado de realizar los eventos regionales. Este evento eleva a los equipos que compiten al escenario internacional.
@@ -73,5 +82,9 @@
         <a href="#titulo"><span class="material-icons dos">arrow_upward</span></a>
         <p class="copy-inicio"> copyrigth &copy;2022 </p>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
