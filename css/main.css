@@ -1118,7 +1118,9 @@ footer div p {
   }
 
   .sec-1 {
-    height: 700px;
+    height: auto;
+    padding: 1rem;
+    padding-bottom: 1rem;
   }
 
   .sec-1 h2 {
@@ -1130,7 +1132,9 @@ footer div p {
   }
 
   .sec-2 {
-    height: 700px;
+    height: auto;
+    padding: 1rem;
+    padding-bottom: 1rem;
   }
 
   .sec-2 h2 {
@@ -1146,7 +1150,9 @@ footer div p {
   }
 
   .sec-4 {
-    height: 500px;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .sec-4 h2 {
@@ -1155,18 +1161,6 @@ footer div p {
 
   .sec-4 p {
     text-align: justify;
-  }
-}
-
-@media (max-width: 500px) {
-  .sec-1 {
-    height: 980px;
-  }
-  .sec-2 {
-    height: 1040px;
-  }
-  .sec-4 {
-    height: 780px;
   }
 }
 
@@ -1588,7 +1582,7 @@ footer div p {
 
 @media (max-width: 500px) {
   .titulo-agentes {
-    height: 350px;
+    height: auto;
   }
 }
 
