@@ -1582,7 +1582,7 @@ footer div p {
 
 @media (max-width: 500px) {
   .titulo-agentes {
-    height: auto;
+    height: auto; 
   }
 }
 
